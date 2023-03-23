@@ -29,8 +29,8 @@ st.bokeh_chart(p, use_container_width=True)
 
 
 st.markdown("""---""")
-
-st.markdown("Reduccion de dimensiones con TSNE y visualización")
+tsne_url = 'https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html'
+st.markdown("Reduccion de dimensiones con [TSNE](%s) y visualización" % tsne_url)
 
 
 df = pd.read_csv('penguins_size.csv')
